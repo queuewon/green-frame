@@ -1,7 +1,8 @@
 # GreenFrame
 
-**Node.js 복기용으로** `http` 모듈만 사용해 직접 만든 간단한 웹 프레임워크
-Express가 내부에서 처리해 주는 동작(라우팅, 미들웨어, 바디 파싱, 정적 파일, 세션)을 직접 구현
+**Node.js 복기용으로** `http` 모듈만 사용해 직접 만든 간단한 웹 프레임워크.
+
+- Express가 내부에서 처리해 주는 동작(라우팅, 미들웨어, 바디 파싱, 정적 파일, 세션)을 직접 구현
 
 <img width="1138" height="807" alt="스크린샷 2026-11-10 오전 4 16 34" src="https://github.com/user-attachments/assets/a54d2ee1-126f-4115-b94b-3bffd53925e7" />
 
