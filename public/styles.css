@@ -1,0 +1,107 @@
+:root {
+    --green-900: #0b3d2e;
+    --green-700: #13795b;
+    --green-500: #1fb57f;
+    --green-300: #7ee2b8;
+    --green-50: #effcf6;
+    --text: #0f2a21;
+    --muted: #4f6b61;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Apple SD Gothic Neo', 'Segoe UI', sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at 15% 20%, rgba(31, 181, 127, 0.18), transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(19, 121, 91, 0.15), transparent 45%),
+        var(--green-50);
+}
+
+.card {
+    width: 100%;
+    max-width: 480px;
+    padding: 48px 40px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid rgba(19, 121, 91, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px -20px rgba(11, 61, 46, 0.25);
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 24px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--green-500), var(--green-700));
+    box-shadow: 0 8px 20px -6px rgba(19, 121, 91, 0.6);
+}
+
+.logo svg {
+    width: 32px;
+    height: 32px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--green-900);
+}
+
+h1 span {
+    color: var(--green-500);
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--green-700);
+    background: var(--green-50);
+    border: 1px solid rgba(31, 181, 127, 0.3);
+    border-radius: 999px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green-500);
+    animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(31, 181, 127, 0.5); }
+    50% { box-shadow: 0 0 0 6px rgba(31, 181, 127, 0); }
+}
+
+footer {
+    margin-top: 32px;
+    font-size: 12px;
+    color: #8aa79c;
+}
